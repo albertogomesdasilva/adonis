@@ -7,7 +7,9 @@ export default class Posts extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
       table.string('title').notNullable().unique()
-      table.text('content', 'logtext').notNullable
+      table.text('content', 'logtext').notNullable()
+      table.integer('author_id').unsigned().references('id')
+        .inTable('users').onUpdate('CASCADE').onDelete('CASCADE')
       table.timestamps(true)
     })
   }

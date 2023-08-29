@@ -177,3 +177,18 @@ https://station.cataline.io/bootcamp/introducao-ao-adonis
 
 Validando postagens
 Validação de dados
+
+ node ace make:validator Post
+
+Descrição
+Tipos de validação
+https://preview.adonisjs.com/guides/validator/schema-types
+
+Regras de validação
+https://preview.adonisjs.com/guides/validator/rules
+
+
+https://station.cataline.io/bootcamp/introducao-ao-adonis
+Finalizando relacionamento
+Relacionamento de dados  6:30 LOGAR, POSTAR PARA TRAZER OS DADOS DO AUTHOR
+
