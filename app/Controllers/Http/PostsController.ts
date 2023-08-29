@@ -9,7 +9,8 @@ import { StoreValidator, UpdateValidator } from 'App/Validators/Post'
 
 export default class PostsController {
   public async index({}: HttpContextContract) {
-    const posts = await Post.all()
+    // const posts = await Post.all()
+    const posts = await Post.query().orderBy('id', 'desc').preload('author')
     return posts
   }
 
@@ -35,6 +36,7 @@ export default class PostsController {
     // const data = request.only(['title', 'content'])
     const data = await request.validate(UpdateValidator)
     post.merge(data)
+    await post.preload('author')
     await post.save()
     return post
   }

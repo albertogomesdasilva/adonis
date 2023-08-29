@@ -192,3 +192,6 @@ https://station.cataline.io/bootcamp/introducao-ao-adonis
 Finalizando relacionamento
 Relacionamento de dados  6:30 LOGAR, POSTAR PARA TRAZER OS DADOS DO AUTHOR
 
+https://station.cataline.io/bootcamp/introducao-ao-adonis
+Propriedades computadas - Serialização de dados
+
