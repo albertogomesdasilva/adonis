@@ -17,7 +17,7 @@ export default class CreateUserSeeder extends BaseSeeder {
         role: 'admin',
       },
       {
-        email: 'del@gmail.com',
+        email: 'dell@gmail.com',
         password: '123456',
         role: 'normal',
       },

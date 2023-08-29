@@ -173,4 +173,7 @@ node ace db:seed
 
 se o seed der erro rode: npm install phc-argon2
 
+https://station.cataline.io/bootcamp/introducao-ao-adonis
 
+Validando postagens
+Validação de dados

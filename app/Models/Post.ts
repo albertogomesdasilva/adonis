@@ -7,13 +7,15 @@ export default class Post extends BaseModel {
 
   @column()
   public title: string
+
   @column()
   public content: string
+
+  @column()
+  public slug: string
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   public updatedAt: DateTime
-
-  @column()
-  public slug: string
 }

@@ -5,7 +5,7 @@ export default class Posts extends BaseSchema {
 
   public async up() {
     this.schema.table(this.tableName, (table) => {
-      table.string('slug').notNullable().unique()
+      table.string('slug').unique()
     })
   }
 
